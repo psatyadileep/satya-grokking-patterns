@@ -15,8 +15,7 @@ class Solution:
             if index == len(nums) - 1:
                 res.append(nums.copy())
                 return
-            # lookup = set()
-
+            # lookup = set(
 
             for i in range(index, len(nums)):
                 swap(i,index)
@@ -24,6 +23,8 @@ class Solution:
                 swap(index, i)
 
         helper(0)
+
+
 
         return res
 

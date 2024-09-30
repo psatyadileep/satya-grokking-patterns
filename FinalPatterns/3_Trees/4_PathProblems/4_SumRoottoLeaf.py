@@ -30,8 +30,10 @@ class Solution:
 
         def dfs(root, currSum):
 
+
+            dfs(root.left, currSum)
+            dfs(root.right, currSum)
             if not root:
-                return 0
 
             currSum = currSum*10 + root.val
             print(currSum)
@@ -39,9 +41,7 @@ class Solution:
                 self.total_sum +=currSum
                 print("++++++++++++++")
                 print(self.total_sum)
-
-            dfs(root.left, currSum)
-            dfs(root.right, currSum)
+                return 0
 
 
         dfs(root, 0)

@@ -17,6 +17,8 @@ def permutate(arr):
                 continue
 
 
+
+
             lookup[i] = True
             curr.append(arr[i])
             helper(lookup,curr)
