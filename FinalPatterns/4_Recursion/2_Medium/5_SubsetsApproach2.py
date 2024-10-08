@@ -10,10 +10,10 @@ class Solution:
         def helper(ind, curr):
 
             response.append(curr.copy())
-            print(f"call i = {ind}, curr = {curr}")
+
             for i in range(ind, len(nums)):
 
-                print(f"RECURSION RANGE {ind} -> {len(nums)}")
+
                 curr.append(nums[i])
                 helper(i+1,curr)
                 curr.pop()

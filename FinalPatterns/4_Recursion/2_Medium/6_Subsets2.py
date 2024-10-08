@@ -13,8 +13,8 @@ class Solution:
 
             for i in range(ind, len(nums)):
 
-                # if i!=ind and nums[i]==nums[i-1]:
-                #     continue
+                if i!=ind and nums[i]==nums[i-1]:
+                    continue
 
                 curr.append(nums[i])
                 helper(i+1,curr)

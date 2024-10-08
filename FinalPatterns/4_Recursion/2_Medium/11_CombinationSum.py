@@ -29,6 +29,3 @@ class Solution:
 
 
 print(Solution().combinationSum([2,3,6,7],6))
-
-
-print(Solution().combinationSum([2,2,3],6))
